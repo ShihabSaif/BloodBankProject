@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_version_one.FXMLDocumentController">
+   <left>
+      <VBox fx:id="vbox" prefHeight="400.0" prefWidth="128.0" style="-fx-background-color: #0D1824;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnAdmin" mnemonicParsing="false" onMouseClicked="#admin" prefHeight="64.0" prefWidth="131.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Admin" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDonor" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#donor" prefHeight="64.0" prefWidth="131.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Donor" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReceiver" layoutX="10.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#receiver" prefHeight="64.0" prefWidth="131.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Receiver" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnInventory" layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onMouseClicked="#inventory" prefHeight="64.0" prefWidth="131.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Blood Inventory" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="anchorPane" prefHeight="374.0" prefWidth="472.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="46.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Bank Management System">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
